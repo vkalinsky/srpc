@@ -1,0 +1,333 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		87AEE73817DA2FCB007B95AC /* srpc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87AEE70F17D95231007B95AC /* srpc.cpp */; };
+		87AEE73B17DA2FDE007B95AC /* liblibsrpc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 87AEE73417DA2FBA007B95AC /* liblibsrpc.a */; };
+		87AEE74917DA3341007B95AC /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87AEE74817DA3341007B95AC /* main.cpp */; };
+		87AEE75817DA53C6007B95AC /* transport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87AEE75617DA53C6007B95AC /* transport.cpp */; };
+		87AEE75917DA53C6007B95AC /* transport.h in Headers */ = {isa = PBXBuildFile; fileRef = 87AEE75717DA53C6007B95AC /* transport.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		87AEE73917DA2FD8007B95AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87AEE6FB17D90AC0007B95AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87AEE73317DA2FBA007B95AC;
+			remoteInfo = libsrpc;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		87AEE70117D90AC0007B95AC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		87AEE70317D90AC0007B95AC /* srpc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = srpc; sourceTree = BUILT_PRODUCTS_DIR; };
+		87AEE70F17D95231007B95AC /* srpc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = srpc.cpp; path = libsrpc/srpc.cpp; sourceTree = "<group>"; };
+		87AEE71017D95231007B95AC /* srpc.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = srpc.hpp; path = libsrpc/srpc.hpp; sourceTree = "<group>"; };
+		87AEE73417DA2FBA007B95AC /* liblibsrpc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibsrpc.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		87AEE74817DA3341007B95AC /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = server/main.cpp; sourceTree = SOURCE_ROOT; };
+		87AEE75617DA53C6007B95AC /* transport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = transport.cpp; path = libsrpc/transport.cpp; sourceTree = "<group>"; };
+		87AEE75717DA53C6007B95AC /* transport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = transport.h; path = libsrpc/transport.h; sourceTree = "<group>"; };
+		87AEE75A17DA70ED007B95AC /* srpc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = srpc.h; path = libsrpc/srpc.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		87AEE70017D90AC0007B95AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87AEE73B17DA2FDE007B95AC /* liblibsrpc.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87AEE73117DA2FBA007B95AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		87AEE6FA17D90AC0007B95AC = {
+			isa = PBXGroup;
+			children = (
+				87AEE72F17DA2F71007B95AC /* library */,
+				87AEE70517D90AC0007B95AC /* server */,
+				87AEE70417D90AC0007B95AC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		87AEE70417D90AC0007B95AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				87AEE70317D90AC0007B95AC /* srpc */,
+				87AEE73417DA2FBA007B95AC /* liblibsrpc.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		87AEE70517D90AC0007B95AC /* server */ = {
+			isa = PBXGroup;
+			children = (
+				87AEE74817DA3341007B95AC /* main.cpp */,
+			);
+			name = server;
+			path = udp_server;
+			sourceTree = "<group>";
+		};
+		87AEE72F17DA2F71007B95AC /* library */ = {
+			isa = PBXGroup;
+			children = (
+				87AEE70F17D95231007B95AC /* srpc.cpp */,
+				87AEE71017D95231007B95AC /* srpc.hpp */,
+				87AEE75A17DA70ED007B95AC /* srpc.h */,
+				87AEE75617DA53C6007B95AC /* transport.cpp */,
+				87AEE75717DA53C6007B95AC /* transport.h */,
+			);
+			name = library;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		87AEE73217DA2FBA007B95AC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87AEE75917DA53C6007B95AC /* transport.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		87AEE70217D90AC0007B95AC /* srpc_server */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87AEE70C17D90AC0007B95AC /* Build configuration list for PBXNativeTarget "srpc_server" */;
+			buildPhases = (
+				87AEE6FF17D90AC0007B95AC /* Sources */,
+				87AEE70017D90AC0007B95AC /* Frameworks */,
+				87AEE70117D90AC0007B95AC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				87AEE73A17DA2FD8007B95AC /* PBXTargetDependency */,
+			);
+			name = srpc_server;
+			productName = udp_server;
+			productReference = 87AEE70317D90AC0007B95AC /* srpc */;
+			productType = "com.apple.product-type.tool";
+		};
+		87AEE73317DA2FBA007B95AC /* libsrpc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87AEE73517DA2FBA007B95AC /* Build configuration list for PBXNativeTarget "libsrpc" */;
+			buildPhases = (
+				87AEE73017DA2FBA007B95AC /* Sources */,
+				87AEE73117DA2FBA007B95AC /* Frameworks */,
+				87AEE73217DA2FBA007B95AC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libsrpc;
+			productName = libsrpc;
+			productReference = 87AEE73417DA2FBA007B95AC /* liblibsrpc.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		87AEE6FB17D90AC0007B95AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Promzona;
+			};
+			buildConfigurationList = 87AEE6FE17D90AC0007B95AC /* Build configuration list for PBXProject "srpc" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 87AEE6FA17D90AC0007B95AC;
+			productRefGroup = 87AEE70417D90AC0007B95AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				87AEE70217D90AC0007B95AC /* srpc_server */,
+				87AEE73317DA2FBA007B95AC /* libsrpc */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		87AEE6FF17D90AC0007B95AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87AEE74917DA3341007B95AC /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87AEE73017DA2FBA007B95AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87AEE73817DA2FCB007B95AC /* srpc.cpp in Sources */,
+				87AEE75817DA53C6007B95AC /* transport.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		87AEE73A17DA2FD8007B95AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87AEE73317DA2FBA007B95AC /* libsrpc */;
+			targetProxy = 87AEE73917DA2FD8007B95AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		87AEE70A17D90AC0007B95AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		87AEE70B17D90AC0007B95AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		87AEE70D17D90AC0007B95AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = srpc;
+			};
+			name = Debug;
+		};
+		87AEE70E17D90AC0007B95AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = srpc;
+			};
+			name = Release;
+		};
+		87AEE73617DA2FBA007B95AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		87AEE73717DA2FBA007B95AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		87AEE6FE17D90AC0007B95AC /* Build configuration list for PBXProject "srpc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87AEE70A17D90AC0007B95AC /* Debug */,
+				87AEE70B17D90AC0007B95AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87AEE70C17D90AC0007B95AC /* Build configuration list for PBXNativeTarget "srpc_server" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87AEE70D17D90AC0007B95AC /* Debug */,
+				87AEE70E17D90AC0007B95AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87AEE73517DA2FBA007B95AC /* Build configuration list for PBXNativeTarget "libsrpc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87AEE73617DA2FBA007B95AC /* Debug */,
+				87AEE73717DA2FBA007B95AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 87AEE6FB17D90AC0007B95AC /* Project object */;
+}
